@@ -32,7 +32,7 @@ class PersistentViewerBot:
         self.restart_count = 0
         
         # Configuration - EDIT THESE VALUES
-        self.STREAM_URL = os.getenv('STREAM_URL', "https://www.youtube.com/watch?v=YOUR_STREAM_ID")
+        self.STREAM_URL = os.getenv('STREAM_URL', "https://youtu.be/JWrrWQkubRU?si=z_Pgb6ct6JWdUJVO")
         self.VIDEO_URLS = os.getenv('VIDEO_URLS', "").split(',') if os.getenv('VIDEO_URLS') else []
         self.BOT_MODE = os.getenv('BOT_MODE', 'LIVE').upper()  # LIVE, VIDEO, or MIXED
         self.VIEWER_COUNT = int(os.getenv('VIEWER_COUNT', '5'))
